@@ -7,111 +7,134 @@
   </head>
   <body>
     <div class="block md:hidden">
-      <div
-        class="mobile-main-container w-[90%] mx-auto mt-1.5 flex flex-col gap-2.5"
-      >
-        <div class="image-and-signin-btn flex flex-col w-full gap-5.25">
-          <img
-            src="./assets/images/mobile-onboarding-image.png"
-            alt="plate with food"
-            class="w-full h-39.75 object-cover"
-          />
-          <div class="signin-btn-container flex justify-end">
-            <button
-              class="signin-btn w-29 h-11.5 rounded-[10px] border-2 py-2.75 flex justify-center items-center text-[#1E88E5] font-semibold text-[16px] leading-6 hover:cursor-pointer"
+      <div class="mobile-login w-87.5 flex flex-col py-2.5 gap-4 mx-auto">
+        <!-- Logo and heading -->
+        <div class="logo-and-heading w-full">
+          <p
+            class="text-center font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18] font-island"
+          >
+            Chuks Kitchen
+          </p>
+          <p
+            class="text-center font-semibold text-[24px] leading-8 text-[#000000]"
+          >
+            Login your Account
+          </p>
+        </div>
+
+        <!--  Login form -->
+        <div class="login-form w-full flex flex-col gap-5">
+          <form action="" class="email-or-phone flex flex-col gap-1">
+            <label
+              for="email"
+              class="font-medium text-[14px] leading-5 text-[#3B4758]"
+              >Email or phone number</label
             >
-              Sign In
+            <div
+              class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+            >
+              <img
+                src="../assets/icons/mail.png"
+                alt="mail icon"
+                class="w-[16.67px] h-[13.33px]"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@gmail.com"
+                class="w-full outline-none bg-transparent text-[#000000] text-[14px] leading-[140%]"
+              />
+            </div>
+          </form>
+
+          <form action="" class="password flex flex-col gap-1">
+            <label
+              for="password"
+              class="font-medium text-[14px] leading-5 text-[#3B4758]"
+              >Password</label
+            >
+            <div
+              class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+            >
+              <img
+                src="../assets/icons/lock.png"
+                alt="lock icon"
+                class="w-[13.33px] h-[17.5px]"
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="******"
+                class="w-full outline-none bg-transparent text-[#292535] text-[14px] leading-[140%]"
+              />
+              <img
+                src="../assets/icons/visibility_off.png"
+                alt="Visibility off"
+                class="w-[17.14px] h-[15.79px]"
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- Forgot password -->
+        <div class="forgot-password w-full flex justify-end pr-1.25">
+          <a href="#" class="text-[#1E88E5] font-normal text-[12px] leading-4"
+            >Forgot password?</a
+          >
+        </div>
+
+        <!-- Continue buttons -->
+        <div class="continue-buttons w-full">
+          <button
+            class="w-full h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FF7A18] text-[#FFFFFF] font-semibold text-[16px] leading-6"
+          >
+            Continue
+          </button>
+          <div class="w-full py-3 flex items-center gap-5">
+            <hr class="w-[103.33px] border-[#EEF0F4]" />
+            <p class="font-normal text-[12px] leading-4 text-[#1F2937]">
+              Or Continue with
+            </p>
+            <hr class="w-[103.33px] border-[#EEF0F4]" />
+          </div>
+
+          <!-- Google and Facebook -->
+          <div class="google-and-fb w-full flex flex-col justify-center gap-6">
+            <!--Continue with Google -->
+            <button
+              class="google w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+            >
+              <img
+                src="../assets/icons/google.png"
+                alt="google icon"
+                class="w-5 h-5"
+              />
+              <p>Continue with Google</p>
+            </button>
+
+            <!--Continue with Facebook -->
+            <button
+              class="fb w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+            >
+              <img
+                src="../assets/icons/fb.png"
+                alt="fb icon"
+                class="w-[10.83px] h-5"
+              />
+              <p>Continue with Facebook</p>
             </button>
           </div>
         </div>
-
-        <div class="mobile-middle-container w-full p-2.5 flex flex-col gap-2.5">
-          <div class="w-[98%] mx-auto flex flex-col gap-2.5">
-            <p
-              class="text-center font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18]"
-            >
-              Chuks Kitchen
-            </p>
-            <p class="font-bold text-[32px] leading-10 text-[#1F2937]">
-              Your Authentic Taste of Nigeria
-            </p>
-            <p
-              class="font-normal text-[16px] leading-[140%] text-[#1F2937] tracking-tight"
-            >
-              Experience homemade flavors delivered fresh to your desk or home.
-              We bring the rich culinary heritage of Nigeria right to your
-              doorstep.
-            </p>
-          </div>
-
-          <div
-            class="freshly-prepared w-[98%] rounded-lg px-2.25 py-1.5 flex gap-2.75 bg-[#F3F4F6]"
+        `
+        <div class="">
+          <p
+            class="text-center font-normal text-[12px] leading-4 text-[#616161]"
           >
-            <div
-              class="fork-and-knife-container w-11 h-11 rounded-[13px] p-2.5 flex items-center justify-center bg-[#FFE1C4]"
-            >
-              <img
-                src="./assets/icons/fork-and-knife.png"
-                alt="fork and knife image"
-                class="w-[17.25px] h-[17.25px]"
-              />
-            </div>
-            <p class="font-medium text-[16px] leading-6 text-[#000000] my-auto">
-              Freshly Prepared
-            </p>
-          </div>
-
-          <div
-            class="support-local-business w-[98%] rounded-lg px-2.25 py-1.5 flex gap-2.75 bg-[#F3F4F6]"
-          >
-            <div
-              class="fork-and-knife-container w-11 h-11 rounded-[13px] p-2.5 flex items-center justify-center bg-[#FFE1C4]"
-            >
-              <img
-                src="./assets/icons/fork-and-knife.png"
-                alt="fork and knife image"
-                class="w-[17.25px] h-[17.25px]"
-              />
-            </div>
-            <p class="font-medium text-[16px] leading-6 text-[#000000] my-auto">
-              Support Local Business
-            </p>
-          </div>
-
-          <div
-            class="fast-and-reliable w-[98%] rounded-lg px-2.25 py-1.5 flex gap-2.75 bg-[#F3F4F6]"
-          >
-            <div
-              class="fork-and-knife-container w-11 h-11 rounded-[13px] p-2.5 flex items-center justify-center bg-[#FFE1C4]"
-            >
-              <img
-                src="./assets/icons/fork-and-knife.png"
-                alt="fork and knife image"
-                class="w-[17.25px] h-[17.25px]"
-              />
-            </div>
-            <p class="font-medium text-[16px] leading-6 text-[#000000] my-auto">
-              Fast and Reliable Delivery
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="bottom-btns-container w-full p-2.5 flex flex-col gap-3.5 mb-10"
-        >
-          <!-- Start Your Order btn -->
-          <button
-            class="start-your-order w-82.5 h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FF7A18] mx-auto hover:cursor-pointer font-semibold text-[16px] leading-6 text-[#FFFFFF]"
-          >
-            Start Your Order
-          </button>
-
-          <!-- Learn About Us btn -->
-          <button
-            class="learn-about-us w-82.5 h-15 rounded-[10px] py-4.5 flex items-center justify-center border-2 border-[#1E88E5] mx-auto font-semibold text-[16px] leading-6 text-[#1E88E5] hover:cursor-pointer"
-          >
-            Learn More About Us
-          </button>
+            Don't have an account?
+            <a href="#" class="text-[#1C7FF9]">Create an account</a>
+          </p>
         </div>
       </div>
     </div>
@@ -119,139 +142,300 @@
     <!-- Desktop -->
     <div class="hidden md:flex">
       <div class="desktop-main-body relative">
-        <div class="onboarding-img">
+        <div class="onboarding-img relative">
           <img
-            src="./assets/images/desktop-onboarding-image.png"
+            src="../assets/images/desktop-onboarding-image.png"
             alt="Family having a meal together"
-            class="w-180 h-256"
+            class="w-177.5 h-206"
           />
+          <div class="absolute inset-0 bg-[#FF7A18B2]"></div>
         </div>
 
-        <!-- logo and sign in btn container -->
         <div
-          class="logo-and-signin-btn-container absolute w-143.5 top-7 left-204 flex items-center justify-between"
+          class="image-writeup absolute top-87.25 left-35.75 w-102.5 flex flex-col gap-3.25"
         >
           <p
-            class="font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18]"
+            class="font-bold text-[48px] leading-15.25 text-center text-[#FFFFFF]"
           >
             Chuks Kitchen
           </p>
 
-          <button
-            class="signin-btn w-40 h-13.5 rounded-[10px] border-2 flex justify-center items-center py-3.75 text-[#1E88E5] font-semibold text-[16px] leading-6 hover:cursor-pointer"
+          <p
+            class="font-medium text-[24px] leading-8.5 text-center text-[#FFFFFF]"
           >
-            Sign In
-          </button>
+            Your journey to delicious, authentic Nigerian meals starts here.
+            Sign up or log in to order your favorites today!
+          </p>
         </div>
 
-        <!-- middle content container -->
         <div
-          class="middle-content absolute w-144.25 top-62.5 left-203.25 flex flex-col gap-5.25 p-2.5"
+          class="login-container absolute top-20 left-210.75 w-117.5 flex flex-col py-2.5 gap-4 mx-auto"
         >
-          <div class="authentic-taste-container w-full flex flex-col gap-6">
-            <p class="font-bold text-[32px] leading-10.5 text-[#1F2937]">
-              Your Authentic Taste of Nigeria
+          <!-- Logo and heading -->
+          <div class="logo-and-heading w-112.5 mx-auto">
+            <p
+              class="text-center font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18] font-island"
+            >
+              Chuks Kitchen
             </p>
-
-            <p class="font-medium text-[16px] leading-6 text-[#1F2937]">
-              Experience homemade flavors delivered fresh to your desk or home.
-              We bring the rich culinary heritage of Nigeria right to your
-              doorstep.
+            <p
+              class="text-center font-semibold text-[24px] leading-8 text-[#000000]"
+            >
+              Login your Account
             </p>
           </div>
-          <!-- Features -->
-          <div class="features w-full grid grid-cols-2">
-            <!-- Freshly prepared -->
-            <div
-              class="freshly-prepared w-46.25 p-1 flex gap-2.75 items-center"
-            >
-              <div
-                class="img-container w-11 h-11 rounded-[13px] p-2.5 gap-2.5 bg-[#FFE1C4] flex items-center justify-center"
-              >
-                <img
-                  src="./assets/icons/fork-and-knife.png"
-                  alt="fork and knife image"
-                  class="w-[17.25px] h-[18.76px]"
-                />
-              </div>
-              <p class="font-medium text-[16px] leading-6 text-[#000000]">
-                Freshly Prepared
-              </p>
-            </div>
 
-            <!-- Support local business -->
-            <div
-              class="support-local-business w-58.75 p-1 flex gap-2.75 items-center"
-            >
+          <!--  Login form -->
+          <div class="login-form w-112.5 mx-auto flex flex-col gap-5">
+            <form action="" class="email-or-phone flex flex-col gap-1">
+              <label
+                for="email"
+                class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                >Email or phone number</label
+              >
               <div
-                class="img-container w-11 h-11 rounded-[13px] p-2.5 gap-2.5 bg-[#FFE1C4] flex items-center justify-center"
+                class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
               >
                 <img
-                  src="./assets/icons/fork-and-knife.png"
-                  alt="fork and knife image"
-                  class="w-[17.25px] h-[18.76px]"
+                  src="../assets/icons/mail.png"
+                  alt="mail icon"
+                  class="w-[16.67px] h-[13.33px]"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@gmail.com"
+                  class="w-full outline-none bg-transparent text-[#000000] text-[14px] leading-[140%]"
                 />
               </div>
-              <p class="font-medium text-[16px] leading-6 text-[#000000]">
-                Support Local Business
-              </p>
-            </div>
+            </form>
 
-            <!-- Fast and reliable delivery -->
-            <div
-              class="fast-and-reliable-delivery w-58.5 p-1 flex gap-2.75 items-center"
-            >
+            <form action="" class="password flex flex-col gap-1">
+              <label
+                for="password"
+                class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                >Password</label
+              >
               <div
-                class="img-container w-11 h-11 rounded-[13px] p-2.5 gap-2.5 bg-[#FFE1C4] flex items-center justify-center"
+                class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
               >
                 <img
-                  src="./assets/icons/delivery-truck.png"
-                  alt="delivery truck image"
-                  class="w-[17.25px] h-[18.76px]"
+                  src="../assets/icons/lock.png"
+                  alt="lock icon"
+                  class="w-[13.33px] h-[17.5px]"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="******"
+                  class="w-full outline-none bg-transparent text-[#292535] text-[14px] leading-[140%]"
+                />
+                <img
+                  src="../assets/icons/visibility_off.png"
+                  alt="Visibility off"
+                  class="w-[17.14px] h-[15.79px]"
                 />
               </div>
-              <p class="font-medium text-[16px] leading-6 text-[#000000]">
-                Fast & Reliable Delivery
+            </form>
+          </div>
+
+          <!-- Forgot password -->
+          <div class="forgot-password w-full flex justify-end pr-1.25">
+            <a href="#" class="text-[#1E88E5] font-normal text-[12px] leading-4"
+              >Forgot password?</a
+            >
+          </div>
+
+          <!-- Continue buttons -->
+          <div class="continue-buttons w-112.5 mx-auto">
+            <button
+              class="w-full h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FF7A18] text-[#FFFFFF] font-semibold text-[16px] leading-6"
+            >
+              Continue
+            </button>
+            <div class="w-full py-3 flex items-center gap-5 justify-between">
+              <hr class="w-[136.67px] border-[#EEF0F4]" />
+              <p class="font-normal text-[12px] leading-4 text-[#1F2937]">
+                Or continue with
               </p>
+              <hr class="w-[136.67px] border-[#EEF0F4]" />
             </div>
           </div>
 
-          <!-- Buttons container -->
+          <!-- Google and Facebook -->
           <div
-            class="btns-container w-full flex flex-col gap-7.75">
-            <!-- Start Your Order btn -->
+            class="google-and-fb w-112.5 mx-auto flex flex-col justify-center gap-6"
+          >
+            <!--Continue with Google -->
             <button
-              class="start-your-order w-full h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FF7A18] mx-auto hover:cursor-pointer font-semibold text-[16px] leading-6 text-[#FFFFFF]">
-              Start Your Order 
+              class="google w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+            >
+              <img
+                src="../assets/icons/google.png"
+                alt="google icon"
+                class="w-5 h-5"
+              />
+              <p>Continue with Google</p>
             </button>
 
-            <!-- Learn More btn -->
+            <!--Continue with Facebook -->
             <button
-              class="learn-more w-full h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FFFFFF] border-2 border-[#1E88E5] mx-auto hover:cursor-pointer font-semibold text-[16px] leading-6 text-[#1E88E5]">
-              Learn More About Us
+              class="fb w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+            >
+              <img
+                src="../assets/icons/fb.png"
+                alt="fb icon"
+                class="w-[10.83px] h-5"
+              />
+              <p>Continue with Facebook</p>
             </button>
+          </div>
+          `
+          <div class="">
+            <p
+              class="text-center font-normal text-[12px] leading-4 text-[#616161]"
+            >
+              Don't have an account?
+              <a href="#" class="text-[#1C7FF9]">Create an account</a>
+            </p>
+          </div>
         </div>
-
-        <!-- Policy and terms of service -->
-        <diva
-          class="policy-and-terms absolute w-133.75 top-164.75 flex gap-4.25 justify-center">
-<p class="font-medium text-[14px] leading-5 text-[#1F2937]">
-  © 2024 Chuks Kitchen.
-</p>
-
-<p class="font-medium text-[14px] leading-5 text-[#64B5F6]">
-  Privacy Policy
-</p>
-
-<p class="font-medium text-[14px] leading-5 text-[#64B5F6]">
-  Terms of Service
-</p>
-
       </div>
     </div>
 
     <footer>
-      <div class="w-full p-16.25 flex gap-1"></div>
+      <div
+        class="footer hidden w-full py-16.25 md:flex flex-col gap-1 footer-bg"
+      >
+        <div class="footer-main w-full px-27.5 flex gap-25.25">
+          <!-- Description -->
+          <div class="footer-description w-[229.25px]">
+            <p
+              class="font-normal text-[37.02px] leading-[37.02px] text-[#FF7A18] font-island"
+            >
+              Chuks Kitchen
+            </p>
+            <p
+              class="font-normal text-[24px] leading-9 text-[#FFFFFF] font-jost"
+            >
+              Bringing the authentic flavors of Nigerian home cooking to your
+              table, with passion and care.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="quick-links w-[229.25px]">
+            <p
+              class="font-normal text-[24px] leading-9 text-[#FFFFFF] font-jost"
+            >
+              Quick Links
+            </p>
+            <ul class="flex flex-col gap-1 p-2.5">
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Home
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Explore
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                My Order
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Account
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="contact-us w-[229.25px]">
+            <p
+              class="font-normal text-[24px] leading-9 text-[#FFFFFF] font-jost"
+            >
+              Contact Us
+            </p>
+            <ul class="flex flex-col gap-1 p-2.5">
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                +234 801 234 5678
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                hello@chukskitchen.com
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] font-poppins"
+              >
+                123 Taste Blvd, Lagos, Nigeria
+              </li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <div class="socials w-[229.25px]">
+            <ul class="flex flex-col gap-1 p-2.5">
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Facebook
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Twitter
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                LinkedIn
+              </li>
+              <li
+                class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+              >
+                Instagram
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rights reserved -->
+        <div
+          class="rights-reserved w-full flex items-center justify-between px-26"
+        >
+          <p
+            class="font-poppins font-normal text-[12px] leading-5 text-[#FFFFFF]"
+          >
+            © 2020 Lift Media. All rights reserved.
+          </p>
+
+          <!-- Scroll to top -->
+          <div
+            class="blue-circle w-13 h-13 rounded-full bg-[#0081FE] flex items-center justify-center"
+          >
+            <img
+              src="../assets/icons/arrow-up.png"
+              alt="Arrow facing upwards"
+              class="w-6 h-6"
+            />
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
