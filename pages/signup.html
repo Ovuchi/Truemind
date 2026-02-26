@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="block md:hidden">
+      <div
+        class="mobile-signup w-87.5 flex flex-col py-2.5 gap-4 mx-auto mt-13.25 mb-13.25"
+      >
+        <!-- Logo and heading -->
+        <div class="logo-and-heading w-full">
+          <p
+            class="text-center font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18] font-island"
+          >
+            Chuks Kitchen
+          </p>
+          <p
+            class="text-center font-semibold text-[24px] leading-8 text-[#000000]"
+          >
+            Create Your Account
+          </p>
+        </div>
+
+        <!--  Sign-up form -->
+        <div class="signup-form w-full flex flex-col gap-5">
+          <form action="" class="email-or-phone flex flex-col gap-1">
+            <label
+              for="email"
+              class="font-medium text-[14px] leading-5 text-[#3B4758]"
+              >Email
+            </label>
+            <div
+              class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+            >
+              <img
+                src="../assets/icons/mail.png"
+                alt="mail icon"
+                class="w-[16.67px] h-[13.33px]"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@gmail.com"
+                class="w-full outline-none bg-transparent text-[#000000] text-[14px] leading-[140%]"
+              />
+            </div>
+          </form>
+
+          <form action="" class="phone flex flex-col gap-1">
+            <label
+              for="phone"
+              class="font-medium text-[14px] leading-5 text-[#3B4758]"
+              >Phone number
+            </label>
+            <div
+              class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+            >
+              <img
+                src="../assets/icons/call.png"
+                alt="call icon"
+                class="w-[16.67px] h-[13.33px]"
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="8123340690"
+                class="w-full outline-none bg-transparent text-[#000000] text-[14px] leading-[140%]"
+              />
+            </div>
+          </form>
+
+          <form action="" class="password flex flex-col gap-1">
+            <label
+              for="password"
+              class="font-medium text-[14px] leading-5 text-[#3B4758]"
+              >Password</label
+            >
+            <div
+              class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+            >
+              <img
+                src="../assets/icons/lock.png"
+                alt="lock icon"
+                class="w-[13.33px] h-[17.5px]"
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="QWE123#"
+                class="w-full outline-none bg-transparent text-[#292535] text-[14px] leading-[140%]"
+              />
+              <img
+                src="../assets/icons/visibility_off.png"
+                alt="Visibility off"
+                class="w-[17.14px] h-[15.79px]"
+              />
+            </div>
+          </form>
+
+          <div class="confirm-password-and-agree-terms flex flex-col gap-1.75">
+            <form action="" class="password flex flex-col gap-1">
+              <label
+                for="password"
+                class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                >Confirm password</label
+              >
+              <div
+                class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+              >
+                <img
+                  src="../assets/icons/lock.png"
+                  alt="lock icon"
+                  class="w-[13.33px] h-[17.5px]"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="QWE123#"
+                  class="w-full outline-none bg-transparent text-[#292535] text-[14px] leading-[140%]"
+                />
+                <img
+                  src="../assets/icons/visibility_off.png"
+                  alt="Visibility off"
+                  class="w-[17.14px] h-[15.79px]"
+                />
+              </div>
+            </form>
+
+            <div class="terms-and-conditions flex gap-3 items-center">
+              <form action="/action_page.php">
+                <input
+                  type="checkbox"
+                  id=""
+                  name=""
+                  value=""
+                  class="w-4.25 h-4.25 px-0.5 py-1 hover:cursor-pointer"
+                />
+              </form>
+
+              <p class="font-medium text-[14px] leading-5 text-[#616161]">
+                I agree to the
+                <a href="#" class="text-[#1E88E5]">Terms & Conditions</a> and
+                <a href="#" class="text-[#1E88E5]">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue buttons -->
+        <div class="continue-buttons w-full">
+          <button
+            class="w-full h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FF7A18] text-[#FFFFFF] font-semibold text-[16px] leading-6 hover:cursor-pointer hover:bg-amber-700"
+          >
+            Continue
+          </button>
+          <div class="w-full py-3 flex items-center gap-5">
+            <hr class="w-[103.33px] border-[#EEF0F4]" />
+            <p class="font-normal text-[12px] leading-4 text-[#1F2937]">
+              Or Continue with
+            </p>
+            <hr class="w-[103.33px] border-[#EEF0F4]" />
+          </div>
+
+          <!-- Google and Facebook -->
+          <div class="google-and-fb w-full flex flex-col justify-center gap-6">
+            <!--Continue with Google -->
+            <button
+              class="google w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+            >
+              <img
+                src="../assets/icons/google.png"
+                alt="google icon"
+                class="w-5 h-5"
+              />
+              <p>Continue with Google</p>
+            </button>
+
+            <!--Continue with Facebook -->
+            <button
+              class="fb w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+            >
+              <img
+                src="../assets/icons/fb.png"
+                alt="fb icon"
+                class="w-[10.83px] h-5"
+              />
+              <p>Continue with Facebook</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="">
+          <p
+            class="text-center font-normal text-[12px] leading-4 text-[#616161]"
+          >
+            Already have an account?
+            <a href="#" class="text-[#1C7FF9]">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="hidden md:flex">
+      <div class="desktop-main-body relative">
+        <div class="onboarding-img relative">
+          <img
+            src="../assets/images/desktop-onboarding-image.png"
+            alt="Family having a meal together"
+            class="w-177.5 h-256"
+          />
+          <div class="absolute inset-0 bg-[#FF7A18B2]"></div>
+        </div>
+
+        <div
+          class="image-writeup absolute top-112.5 left-35.75 w-102.5 flex flex-col gap-3.25"
+        >
+          <p
+            class="font-bold text-[48px] leading-15.25 text-center text-[#FFFFFF]"
+          >
+            Chuks Kitchen
+          </p>
+
+          <p
+            class="font-medium text-[24px] leading-8.5 text-center text-[#FFFFFF]"
+          >
+            Your journey to delicious, authentic Nigerian meals starts here.
+            Sign up or log in to order your favorites today!
+          </p>
+        </div>
+
+        <div
+          class="signup-container absolute top-20 left-210.75 w-116 flex flex-col p-2.5 gap-4"
+        >
+          <!-- Logo and heading -->
+          <div class="logo-and-heading w-112.5 mx-auto">
+            <p
+              class="text-center font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18] font-island"
+            >
+              Chuks Kitchen
+            </p>
+            <p
+              class="text-center font-semibold text-[24px] leading-8 text-[#000000]"
+            >
+              Create Your Account
+            </p>
+          </div>
+
+          <!--  Signup form -->
+          <div class="signup-desktop-form w-111 flex flex-col gap-5 mx-auto">
+            <form action="" class="email-or-phone flex flex-col gap-1.5">
+              <label
+                for="email"
+                class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                >Email
+              </label>
+              <div
+                class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+              >
+                <img
+                  src="../assets/icons/mail.png"
+                  alt="mail icon"
+                  class="w-[16.67px] h-[13.33px]"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@gmail.com"
+                  class="w-full outline-none bg-transparent text-[#000000] text-[14px] leading-[140%]"
+                />
+              </div>
+            </form>
+
+            <form action="" class="phone flex flex-col gap-1">
+              <label
+                for="phone"
+                class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                >Phone number
+              </label>
+              <div
+                class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+              >
+                <img
+                  src="../assets/icons/call.png"
+                  alt="call icon"
+                  class="w-[16.67px] h-[13.33px]"
+                />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="8123340690"
+                  class="w-full outline-none bg-transparent text-[#000000] text-[14px] leading-[140%]"
+                />
+              </div>
+            </form>
+
+            <form action="" class="password flex flex-col gap-1">
+              <label
+                for="password"
+                class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                >Password</label
+              >
+              <div
+                class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+              >
+                <img
+                  src="../assets/icons/lock.png"
+                  alt="lock icon"
+                  class="w-[13.33px] h-[17.5px]"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="QWE123#"
+                  class="w-full outline-none bg-transparent text-[#292535] text-[14px] leading-[140%]"
+                />
+                <img
+                  src="../assets/icons/visibility_off.png"
+                  alt="Visibility off"
+                  class="w-[17.14px] h-[15.79px]"
+                />
+              </div>
+            </form>
+
+            <div
+              class="confirm-password-and-agree-terms flex flex-col gap-1.75 h-27"
+            >
+              <form action="" class="password flex flex-col gap-1">
+                <label
+                  for="password"
+                  class="font-medium text-[14px] leading-5 text-[#3B4758]"
+                  >Confirm password</label
+                >
+                <div
+                  class="flex items-center w-full h-13.5 rounded-lg border border-[#BDBDBD] py-1 px-4 gap-3"
+                >
+                  <img
+                    src="../assets/icons/lock.png"
+                    alt="lock icon"
+                    class="w-[13.33px] h-[17.5px]"
+                  />
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="QWE123#"
+                    class="w-full outline-none bg-transparent text-[#292535] text-[14px] leading-[140%]"
+                  />
+                  <img
+                    src="../assets/icons/visibility_off.png"
+                    alt="Visibility off"
+                    class="w-[17.14px] h-[15.79px]"
+                  />
+                </div>
+              </form>
+
+              <div class="terms-and-conditions flex gap-3 items-start">
+                <form action="/action_page.php">
+                  <input
+                    type="checkbox"
+                    id=""
+                    name=""
+                    value=""
+                    class="w-4.25 h-4.25 px-0.5 py-1 hover:cursor-pointer"
+                  />
+                </form>
+
+                <p class="font-medium text-[14px] leading-5 text-[#616161]">
+                  I agree to the
+                  <a href="#" class="text-[#1E88E5]">Terms & Conditions</a> and
+                  <a href="#" class="text-[#1E88E5]">Privacy Policy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Continue buttons -->
+          <div class="continue-buttons w-full">
+            <button
+              class="w-full h-15 rounded-[10px] py-4.5 flex items-center justify-center bg-[#FF7A18] text-[#FFFFFF] font-semibold text-[16px] leading-6 hover:cursor-pointer hover:bg-amber-700"
+            >
+              Continue
+            </button>
+            <div class="w-full py-3 flex items-center gap-5 justify-between">
+              <hr class="w-[136.67px] border-[#EEF0F4]" />
+              <p class="font-normal text-[12px] leading-4 text-[#1F2937]">
+                Or continue with
+              </p>
+              <hr class="w-[136.67px] border-[#EEF0F4]" />
+            </div>
+
+            <!-- Google and Facebook -->
+            <div
+              class="google-and-fb w-full flex flex-col justify-center gap-6"
+            >
+              <!--Continue with Google -->
+              <button
+                class="google w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+              >
+                <img
+                  src="../assets/icons/google.png"
+                  alt="google icon"
+                  class="w-5 h-5"
+                />
+                <p>Continue with Google</p>
+              </button>
+
+              <!--Continue with Facebook -->
+              <button
+                class="fb w-full h-12 rounded-md border py-1 border-[#BDBDBD] bg-[#FFFFFF] text-[#3B4758] font-roboto text-[14px] leading-[100%] flex items-center justify-center gap-2"
+              >
+                <img
+                  src="../assets/icons/fb.png"
+                  alt="fb icon"
+                  class="w-[10.83px] h-5"
+                />
+                <p>Continue with Facebook</p>
+              </button>
+            </div>
+
+            <div class="">
+              <p
+                class="text-center font-normal text-[12px] leading-4 text-[#616161]"
+              >
+                Already have an account?
+                <a href="#" class="text-[#1C7FF9]">Sign in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer hidden w-full py-16.25 md:flex flex-col gap-1 footer-bg">
+      <div class="footer-main w-full px-27.5 flex gap-25.25">
+        <!-- Description -->
+        <div class="footer-description w-[229.25px]">
+          <p
+            class="font-normal text-[37.02px] leading-[37.02px] text-[#FF7A18] font-island"
+          >
+            Chuks Kitchen
+          </p>
+          <p class="font-normal text-[24px] leading-9 text-[#FFFFFF] font-jost">
+            Bringing the authentic flavors of Nigerian home cooking to your
+            table, with passion and care.
+          </p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="quick-links w-[229.25px]">
+          <p class="font-normal text-[24px] leading-9 text-[#FFFFFF] font-jost">
+            Quick Links
+          </p>
+          <ul class="flex flex-col gap-1 p-2.5">
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Home
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Explore
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              My Order
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Account
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Contact
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="contact-us w-[229.25px]">
+          <p class="font-normal text-[24px] leading-9 text-[#FFFFFF] font-jost">
+            Contact Us
+          </p>
+          <ul class="flex flex-col gap-1 p-2.5">
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              +234 801 234 5678
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              hello@chukskitchen.com
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] font-poppins"
+            >
+              123 Taste Blvd, Lagos, Nigeria
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials -->
+        <div class="socials w-[229.25px]">
+          <ul class="flex flex-col gap-1 p-2.5">
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Facebook
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Twitter
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              LinkedIn
+            </li>
+            <li
+              class="font-normal text-[12px] leading-5 text-[#FFFFFF] hover:cursor-pointer hover:text-[#64B5F6] font-poppins"
+            >
+              Instagram
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Rights reserved -->
+      <div
+        class="rights-reserved w-full flex items-center justify-between px-26"
+      >
+        <p
+          class="font-poppins font-normal text-[12px] leading-5 text-[#FFFFFF]"
+        >
+          © 2020 Lift Media. All rights reserved.
+        </p>
+
+        <!-- Scroll to top -->
+        <div
+          class="blue-circle w-13 h-13 rounded-full bg-[#0081FE] flex items-center justify-center"
+        >
+          <img
+            src="../assets/icons/arrow-up.png"
+            alt="Arrow facing upwards"
+            class="w-6 h-6"
+          />
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
