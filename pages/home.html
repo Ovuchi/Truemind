@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="block md:hidden">
+      <header
+        class="w-full flex justify-between items-center px-4.75 bg-[#FFFFFF]"
+      >
+        <div class="logo-text">
+          <p
+            class="text-normal text-[24px] leading-[40.81px] font-island text-[#FF7A18]"
+          >
+            Chuks Kitchen
+          </p>
+        </div>
+
+        <!-- Menu Icon -->
+        <div class="menu">
+          <img
+            src="../assets/icons/Menu.png"
+            alt="Menu icon"
+            class="w-6.25 h-6.25"
+          />
+        </div>
+      </header>
+
+      <!-- Hero section -->
+      <section class="hero w-full relative overflow-visible">
+        <img
+          src="../assets/images/home-hero.png"
+          alt="Home hero image"
+          class="w-full"
+        />
+
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-[#0000004D]"></div>
+
+        <div
+          class="hero-writeup w-93.25 flex flex-col gap-5 absolute top-61 left-2"
+        >
+          <p class="font-inter font-bold text-[32px] leading-10 text-[#FFFFFF]">
+            The Heart of Nigerian Home Cooking
+          </p>
+          <p
+            class="font-inter font-medium text-[16px] leading-6 text-[#FFFFFF]"
+          >
+            Handcrafted with passion, delivered with care.
+          </p>
+
+          <button
+            class="w-53.75 bg-[#FF7A18] text-[#FFFFFF] font-inter font-medium text-[16px] leading-6 py-3.75 rounded-[10px] flex items-center justify-center"
+          >
+            Discover what's new
+          </button>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features w-full relative bg-[#F3F4F6]">
+        <!-- Search Bar -->
+        <div
+          class="search-bar w-87.75 bg-[#FFFFFF] rounded-lg px-1.75 py-3.75 flex gap-1.25 mx-auto z-10 absolute top-0 left-0 right-0 -translate-y-1/2 items-center justify-between"
+        >
+          <!-- Search Icon -->
+          <div class="search-icon w-6 h-6 flex items-center justify-center">
+            <img
+              src="../assets/icons/search-icon.png"
+              alt="Search icon"
+              class="w-4.5 h-4.5"
+            />
+          </div>
+
+          <!-- form -->
+          <form class="w-73 flex items-center">
+            <input
+              type="text"
+              placeholder="What are you craving for today?"
+              class="w-full border-none outline-none text-[16px] leading-[140%] text-[#1F2937] font-inter font-normal"
+            />
+          </form>
+        </div>
+
+        <!-- Popular categories -->
+        <div
+          class="popular-categories w-full px-4 py-24 flex flex-col gap-8.25"
+        >
+          <p
+            class="font-inter font-semibold text-[24px] leading-8 text-[#1F2937] text-center"
+          >
+            Popular Categories
+          </p>
+
+          <!-- Jollof Delights -->
+          <div
+            class="w-89.5 rounded-[14px] pt-0.5 pr-1 pb-4.5 pl-1 flex flex-col gap-2.5 bg-[#FFFFFF] mx-auto"
+          >
+            <img
+              src="../assets/images/jollof-and-chicken.png"
+              alt="Plate of jollof rice and chicken"
+              class="w-87.5 h-55.5 rounded-tl-[14px] rounded-tr-[14px]"
+            />
+            <p
+              class="font-inter font-medium text-[14px] leading-5 text-[#1F2937] text-center"
+            >
+              Jollof Delights
+            </p>
+          </div>
+
+          <!-- Swallow & Soups -->
+          <div
+            class="w-89.5 rounded-[14px] pt-0.5 pr-1 pb-4.5 pl-1 flex flex-col gap-2.5 bg-[#FFFFFF] mx-auto"
+          >
+            <img
+              src="../assets/images/eba-and-soup.png"
+              alt="Plate of eba and soup"
+              class="w-87.5 h-55.5 rounded-tl-[14px] rounded-tr-[14px]"
+            />
+            <p
+              class="font-inter font-medium text-[14px] leading-5 text-[#1F2937] text-center"
+            >
+              Swallow & Soups
+            </p>
+          </div>
+
+          <!-- Grills & BBQ -->
+          <div
+            class="w-89.5 rounded-[14px] pt-0.5 pr-1 pb-4.5 pl-1 flex flex-col gap-2.5 bg-[#FFFFFF] mx-auto"
+          >
+            <img
+              src="../assets/images/suya.png"
+              alt="suya"
+              class="w-87.5 h-55.5 rounded-tl-[14px] rounded-tr-[14px]"
+            />
+            <p
+              class="font-inter font-medium text-[14px] leading-5 text-[#1F2937] text-center"
+            >
+              Grills & BBQ
+            </p>
+          </div>
+
+          <!-- View All -->
+          <a
+            href=""
+            class="font-inter font-normal text-[16px] leading-[140%] text-[#1E88E5] text-center block"
+          >
+            View All Categories
+          </a>
+        </div>
+
+        <!-- Chef's Special -->
+        <div class="chefs-specials w-full px-4 py-24 flex flex-col gap-8.25">
+          <p
+            class="font-inter font-semibold text-[24px] leading-8 text-[#1F2937] text-center"
+          >
+            Chef's Specials
+          </p>
+
+          <!-- jollof-and-price -->
+          <div
+            class="jollof-and-price w-89 rounded-[14px] px-0.5 pt-0.5 pb-11.5 flex flex-col gap-6.25 bg-[#FFFFFF] mx-auto"
+          >
+            <img
+              src="../assets/images/jollof-and-chicken.png"
+              alt="jollof rice and chicken"
+              class="w-88 h-55.5 rounded-tl-[14px] rounded-tr-[14px]"
+            />
+            <!-- description -->
+            <div class="description w-full px-4.25 flex flex-col gap-1.75">
+              <p
+                class="font-inter font-semibold text-[24px] leading-8 text-[#1F2937]"
+              >
+                Jollof Rice & Chicken
+              </p>
+              <p
+                class="font-inter font-medium text-[16px] leading-6 text-[#1F2937]"
+              >
+                Our signature Jollof rice, cooked to perfection, served with
+                succulent fried chicken.
+              </p>
+            </div>
+
+            <!-- price and add to cart button -->
+            <div
+              class="price-and-cart w-full flex justify-between items-center px-3.5"
+            >
+              <p
+                class="font-inter font-medium text-[16px] leading-6 text-[#FF7A18]"
+              >
+                ₦3,500
+              </p>
+              <button
+                class="w-40 bg-[#FF7A18] text-[#FFFFFF] font-inter font-semibold text-[16px] leading-6 py-3.75 rounded-[10px] flex items-center justify-center"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Tilapia and price -->
+          <div
+            class="tilapia-and-price w-89 rounded-[14px] px-0.5 pt-0.5 pb-11.5 flex flex-col gap-6.25 bg-[#FFFFFF] mx-auto"
+          >
+            <img
+              src="../assets/images/tilapia-peppersoup.png"
+              alt="tilapia"
+              class="w-88 h-55.5 rounded-tl-[14px] rounded-tr-[14px]"
+            />
+            <!-- description -->
+            <div class="description w-full px-4.25 flex flex-col gap-1.75">
+              <p
+                class="font-inter font-semibold text-[24px] leading-8 text-[#1F2937]"
+              >
+                Spicy Tilapia Pepper Soup
+              </p>
+              <p
+                class="font-inter font-medium text-[16px] leading-6 text-[#1F2937]"
+              >
+                A comforting and spicy soup with tender tilapia fish, a true
+                Nigerian delicacy.
+              </p>
+            </div>
+
+            <!-- price and add to cart button -->
+            <div
+              class="price-and-cart w-full flex justify-between items-center px-3.5"
+            >
+              <p
+                class="font-inter font-medium text-[16px] leading-6 text-[#FF7A18]"
+              >
+                ₦3,500
+              </p>
+              <button
+                class="w-40 bg-[#FF7A18] text-[#FFFFFF] font-inter font-semibold text-[16px] leading-6 py-3.75 rounded-[10px] flex items-center justify-center"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- jollof-and-price -->
+          <div
+            class="jollof-and-price w-89 rounded-[14px] px-0.5 pt-0.5 pb-11.5 flex flex-col gap-6.25 bg-[#FFFFFF] mx-auto"
+          >
+            <img
+              src="../assets/images/jollof-and-chicken.png"
+              alt="jollof rice and chicken"
+              class="w-88 h-55.5 rounded-tl-[14px] rounded-tr-[14px]"
+            />
+            <!-- description -->
+            <div class="description w-full px-4.25 flex flex-col gap-1.75">
+              <p
+                class="font-inter font-semibold text-[24px] leading-8 text-[#1F2937]"
+              >
+                Jollof Rice & Chicken
+              </p>
+              <p
+                class="font-inter font-medium text-[16px] leading-6 text-[#1F2937]"
+              >
+                Our signature Jollof rice, cooked to perfection, served with
+                succulent fried chicken.
+              </p>
+            </div>
+
+            <!-- price and add to cart button -->
+            <div
+              class="price-and-cart w-full flex justify-between items-center px-3.5"
+            >
+              <p
+                class="font-inter font-medium text-[16px] leading-6 text-[#FF7A18]"
+              >
+                ₦3,500
+              </p>
+              <button
+                class="w-40 bg-[#FF7A18] text-[#FFFFFF] font-inter font-semibold text-[16px] leading-6 py-3.75 rounded-[10px] flex items-center justify-center"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- View All -->
+          <a
+            href="#"
+            class="text-[#1E88E5] font-inter font-normal text-[16px] leading-[140%] text-center block"
+            >View All Specials</a
+          >
+        </div>
+
+        <!-- beans -->
+        <img
+          src="../assets/images/beans-and-stew.png"
+          alt="plate of beans and stew"
+          class=""
+        />
+      </section>
+    </div>
+
+    <!-- Desktop -->
+    <div class="hidden md:block">
+      <header
+        class="w-full py-4.5 flex bg-[#FFFFFF] items-center top-0 justify-around"
+      >
+        <p
+          class="font-normal text-[40.81px] leading-[40.81px] text-[#FF7A18] font-island"
+        >
+          Chuks Kitchen
+        </p>
+
+        <div class="nav-bar w-187.75 p-2.5 flex gap-2.5 justify-between">
+          <a
+            href="#"
+            class="font-inter font-normal text-[16px] leading-[140%] text-[#FF7A18] w-[215.25]"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="font-inter font-normal text-[16px] leading-[140%] text-[#1F2937] w-[215.25]"
+            >Explore</a
+          >
+          <a
+            href="#"
+            class="font-inter font-normal text-[16px] leading-[140%] text-[#1F2937] w-[215.25]"
+            >My Orders</a
+          >
+          <a
+            href="#"
+            class="font-inter font-normal text-[16px] leading-[140%] text-[#1F2937] w-[215.25]"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Login button -->
+        <button
+          class="font-inter font-semibold text-[16px] leading-6 text-[#FFFFFF] bg-[#FF7A18] rounded-[10px] py-3.75 w-35 flex items-center justify-center"
+        >
+          Login
+        </button>
+      </header>
+
+      <!-- hero section -->
+      <section class="w-full desktop-hero relative overflow-visible">
+        <img
+          src="../assets/images/desktop-hero.png"
+          alt="desktop home hero image"
+          class="w-full"
+        />
+
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-[#0000004D]"></div>
+
+        <div
+          class="hero-writeup w-230.5 flex flex-col gap-10.5 absolute top-91.25 left-12"
+        >
+          <p
+            class="font-inter font-bold text-[48px] leading-15.25 text-[#FFFFFF]"
+          >
+            The Heart of Nigerian Home Cooking
+          </p>
+          <p
+            class="font-inter font-bold text-[32px] leading-10.5 text-[#FFFFFF]"
+          >
+            Handcrafted with passion, delivered with care.
+          </p>
+
+          <button
+            class="w-53.75 bg-[#FF7A18] text-[#FFFFFF] font-inter font-semibold text-[16px] leading-6 py-3.75 rounded-[10px] flex items-center justify-center"
+          >
+            Discover what's new
+          </button>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features w-full relative bg-[#F3F4F6]">
+        <!-- Search Bar -->
+        <div
+          class="search-bar w-267.25 bg-[#FFFFFF] rounded-lg p-4 flex gap-4 mx-auto z-10 absolute top-0 left-0 right-0 -translate-y-1/2 items-center justify-between"
+        >
+          <!-- Search Icon -->
+          <div class="search-icon w-6 h-6 flex items-center justify-center">
+            <img
+              src="../assets/icons/search-icon.png"
+              alt="Search icon"
+              class="w-4.5 h-4.5"
+            />
+          </div>
+
+          <!-- form -->
+          <form class="w-73 flex items-center">
+            <input
+              type="text"
+              placeholder="What are you craving for today?"
+              class="w-full border-none outline-none text-[24px] leading-8.5 text-[#1F2937] font-inter font-semibold"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
